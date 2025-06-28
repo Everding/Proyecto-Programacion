@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #92bfe4;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.landingContainer {
+  width: 100%;
+  max-width: 1800px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.tituloLanding {
+  background-color: #43807E;
+  color: #f8f9fa;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.carruselFotos {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.imgCarrusel {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.historia {
+  background-color: #0E4342;
+  color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 70%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.historia h2 {
+  color: #f8f9fa;
+  margin-bottom: 15px;
+}
+
+.tituloProductos {
+  background-color: #43807E;
+  color: #f8f9fa;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.carruselProductos {
+  max-width: 90%;
+  margin: 0 auto 40px auto;
+}
+
+.cardProducto {
+  background-color: #43807E;
+  color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+.cardProducto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
