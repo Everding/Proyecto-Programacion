@@ -1,0 +1,84 @@
+body {
+  overflow-x: hidden;
+}
+
+.tituloMain {
+  background-color: #43807E;
+  color: #f8f9fa !important;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #92bfe4;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100vw;
+  position: relative;
+  top: -10px;
+  margin-bottom: -30px;
+}
+.containerMain {
+  max-width: 70%;
+  margin-left: 2%; 
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #43807E;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.Explicacion {
+background-color: #0E4342;
+color: #ffffff;
+  padding: 10px;
+  margin-left: 220px;
+  margin-top: 20px;
+  max-width: 30%; 
+   border-radius: 12px;
+}
+
+.table {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #43807E;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.botonCrear {
+  background-color: #0E4342;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  
+}
+
+.botonCrear:hover {
+  background-color: #07292E;
+  color: #ffffff;
+  text-decoration: none;
+}
+

@@ -1,0 +1,4 @@
+export const CREAR = '/productoNuevo';
+export const EDITAR = '/editarProducto/:id';
+export const HOME = '/';
+export const VER = '/verProducto/:id';
