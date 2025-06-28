@@ -7,7 +7,7 @@ import { URL_PRODUCTOS } from '../Constants/endpoints';
 import { EDITAR, VER } from '../Routers/router';
 import { Link } from 'react-router-dom'
 const Main = () => {
-
+  const usuario = localStorage.getItem("usuarioLogueado");
   const [datos, setDatos] = useState([]);
 
   const getProductos = async () => {
@@ -38,7 +38,9 @@ const Main = () => {
       <h1 className='tituloMain'>Productos</h1>
       <div className='pageContainer'>
         <div className='containerMain'>
-          <Link to='/productoNuevo' className='botonCrear' > Crear Producto nuevo </Link>
+          {usuario && (
+            <Link to='/productoNuevo' className='botonCrear' > Crear Producto nuevo </Link>
+          )}
           <Table striped bordered hover>
             <thead>
               <tr>
@@ -59,13 +61,16 @@ const Main = () => {
                   <td>{producto.categoria}</td>
                   <td>{producto.sucursal}</td>
                   <td>
-                    <Link to={EDITAR.replace(':id', producto.id)} className="btn btn-primary">
-                      Editar
-                    </Link>
-                    <Link to={VER.replace(':id', producto.id)} className="btn btn-danger">
-                      Ver
-                    </Link>
-                    <Button onClick={() => Borrar(producto.id)} className='btn btn-success'>Eliminar</Button>
+                    {usuario && (
+                      <>
+                        <Link to={EDITAR.replace(':id', producto.id)} className="btn btn-primary">Editar</Link>
+                        <Link to={VER.replace(':id', producto.id)} className="btn btn-danger">Ver</Link>
+                        <Button onClick={() => Borrar(producto.id)} className='btn btn-success'>Eliminar</Button>
+                      </>
+                    )}
+                    {!usuario && (
+                      <Link to={VER.replace(':id', producto.id)} className="btn btn-danger">Ver</Link>
+                    )}
                   </td>
                 </tr>
               ))}
