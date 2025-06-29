@@ -1,5 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  background-color: #92bfe4;
 }
 
 .tituloMain {
@@ -8,45 +17,28 @@ body {
   text-align: center;
   display: block;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 15px;
-  margin-bottom: 0;
 }
 
 .pageContainer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: #92bfe4;
-  margin-top: 0;
-  padding-top: 0;
   width: 100vw;
-  position: relative;
-  top: -10px;
-  margin-bottom: -30px;
+  padding: 20px 0;
+  margin-bottom: -20px;
 }
+
 .containerMain {
-  max-width: 70%;
-  margin-left: 2%; 
+  width: 90%;
+  max-width: 1200px;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: #43807E;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
-}
-
-.Explicacion {
-background-color: #0E4342;
-color: #ffffff;
-  padding: 10px;
-  margin-left: 220px;
-  margin-top: 20px;
-  max-width: 30%; 
-   border-radius: 12px;
 }
 
 .table {
@@ -56,7 +48,7 @@ color: #ffffff;
 }
 
 .table thead {
-  background-color: #43807E;
+  background-color: #0E4342;
   color: white;
 }
 
@@ -66,14 +58,15 @@ color: #ffffff;
 
 .botonCrear {
   background-color: #0E4342;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 .botonCrear:hover {
@@ -82,3 +75,38 @@ color: #ffffff;
   text-decoration: none;
 }
 
+/* Paginador */
+.paginador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.paginador button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  background-color: #0E4342;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.paginador button:hover:not(:disabled) {
+  background-color: #07292E;
+}
+
+.paginador span {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Quitar el borde azul al hacer click */
+.paginador button:focus {
+  outline: none;
+  
+}
