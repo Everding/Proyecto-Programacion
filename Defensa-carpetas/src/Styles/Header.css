@@ -1,22 +1,70 @@
 .header {
-  background-color: #035f5c;
-  color: #f8f9fa;
-  padding: 15px 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #0E4342;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.headerContent {
+.navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.headerContent img {
-  margin-right: 15px;
-  height: 200px;
+.logoContainer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
 }
 
-.headerContent h1 {
-  color: #f8f9fa;
-  margin: 0;
-  font-size: 1.8rem;
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+.logoText {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #ddd;
+}
+
+.loginSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loginIcon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.loginText {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.loginText:hover {
+  color: #ddd;
 }

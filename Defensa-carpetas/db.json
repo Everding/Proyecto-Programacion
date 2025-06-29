@@ -160,5 +160,23 @@
       "categoria": "agua",
       "sucursal": "Sur"
     }
+  ],
+
+  "admnistradores": [
+      {
+        "id":"1",
+        "usuario": "David",
+        "contraseña": "2342"
+      },
+      {
+        "id":"1",
+        "usuario": "Fabri",
+        "contraseña": "5262"
+      },
+      {
+        "id":"1",
+        "usuario": "Gabriel",
+        "contraseña": "8256"
+      }
   ]
 }
