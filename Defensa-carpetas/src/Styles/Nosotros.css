@@ -1,9 +1,13 @@
 .nosotrosContainer {
-  width: 100vw;          /* Ancho total de la ventana */
-  margin: 20px 0;        /* Margen arriba y abajo */
-  padding: 0 20px;       /* Un poco de espacio a los lados */
+  width: 100vw;
+  margin: 20px 0;
+  padding: 0 20px;
   box-sizing: border-box;
   text-align: center;
+  min-height: calc(100vh - 130px); /* Ajustá según la altura real de Header y Footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tituloNosotros {

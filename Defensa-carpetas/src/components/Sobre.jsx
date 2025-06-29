@@ -40,7 +40,7 @@ const Sobre = () => {
     return (
         <div className="landingContainer">
 
-            <h1 className="tituloLanding">¡Bienvenidos a Kiosco El Buen Sabor!</h1>
+            <h1 className="tituloLanding">Bienvenido al kiosco generico</h1>
 
             <Carousel responsive={responsiveCarruselFotos} infinite autoPlay className="carruselFotos">
                 {imagenesCarrusel.map((img, index) => (

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-left">
-        <a href="/terminos-y-condiciones" className="footer-link">
+        <a href="/" className="footer-link">
           Términos y condiciones
         </a>
       </div>
@@ -18,7 +18,7 @@ const Footer = () => {
 
       <div className="footer-right">
         <a
-          href="https://twitter.com/yourprofile"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
           aria-label="X"
@@ -27,7 +27,7 @@ const Footer = () => {
           <AiOutlineTwitter />
         </a>
         <a
-          href="https://instagram.com/yourprofile"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -36,7 +36,7 @@ const Footer = () => {
           <FaInstagram />
         </a>
         <a
-          href="https://facebook.com/yourprofile"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"

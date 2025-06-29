@@ -30,8 +30,8 @@ body {
   width: 100vw;
   padding: 20px 0;
   margin-bottom: -20px;
+  min-height: calc(100vh - 130px); /* Ajustá este valor según lo que mide tu Header + Footer */
 }
-
 .containerMain {
   width: 90%;
   max-width: 1200px;

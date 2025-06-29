@@ -10,7 +10,7 @@ const Nosotros = () => {
       <div className="perfilesContainer">
         
         <div className="perfilCard">
-          <img src={David} alt="David" className="imgPerfil" />
+          <img src={David} alt="David" className="imgPerfil"/>
           <h3>David</h3>
         </div>
 

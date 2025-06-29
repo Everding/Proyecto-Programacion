@@ -49,7 +49,7 @@ const handleSend = (e) => {
           required
         />
         <input
-          type="Contraseña"
+          type="password"
           placeholder="Contraseña"
           value={contraseña}
           onChange={(e) => setContraseña(e.target.value)}

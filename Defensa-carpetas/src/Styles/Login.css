@@ -1,0 +1,61 @@
+/* Estilo para el contenedor principal */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa todo el alto de la pantalla */
+  background-color: #f8f9fa;
+  width: 210vh;
+}
+
+/* Estilo del formulario */
+.login-form {
+  background-color: #43807E;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgb(253, 253, 253);
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  text-align: center;
+}
+
+/* Título */
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #f8f8f8;
+}
+
+/* Inputs */
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #394747;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #0c3f23;
+}
+
+/* Botón */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0E4342;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0b3534;
+}
+
