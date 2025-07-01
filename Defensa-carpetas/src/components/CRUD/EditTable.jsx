@@ -6,7 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 const EditTable = () => {
   const navigate = useNavigate();
-  const { id } = useParams(); // Para obtener el ID de la URL
+  const { id } = useParams(); 
 
   const [producto, setProducto] = useState({
     nombre: '',

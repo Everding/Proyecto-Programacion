@@ -35,15 +35,14 @@ const Main = () => {
     }
   };
 
-  // Calcular los productos que se mostrarán en la página actual
+
   const indexUltimoProducto = paginaActual * productosPorPagina;
   const indexPrimerProducto = indexUltimoProducto - productosPorPagina;
   const productosPaginados = datos.slice(indexPrimerProducto, indexUltimoProducto);
 
-  // Calcular total de páginas
+
   const totalPaginas = Math.ceil(datos.length / productosPorPagina);
 
-  // Funciones para cambiar página
   const paginaAnterior = () => {
     setPaginaActual((prev) => (prev > 1 ? prev - 1 : prev));
   };
